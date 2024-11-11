@@ -1,18 +1,27 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup
-from pybind11.setup_helpers import Pybind11Extension, build_ext
-import os
 
-ext_modules = [
-    Pybind11Extension(
-        "py_jwt_cpp.jwt_cpp",
-        ["py_jwt_cpp/jwt_wrapper.cpp"],
-        include_dirs=[os.path.join("jwt-cpp", "include"), "/opt/homebrew/include"],
-        library_dirs=["/opt/homebrew/lib"],
-        libraries=["ssl", "crypto"],
-    ),
-]
-setup(
-    name="jwt_cpp",
-    ext_modules=ext_modules,
-    cmdclass={"build_ext": build_ext},
-)
+packages = \
+['py_jwt_cpp']
+
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'py_jwt_cpp',
+    'version': '0.1.0',
+    'description': '',
+    'long_description': '',
+    'author': 'Your Name',
+    'author_email': 'you@example.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'None',
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '==3.11.5',
+}
+from build import *
+build(setup_kwargs)
+
+setup(**setup_kwargs)
