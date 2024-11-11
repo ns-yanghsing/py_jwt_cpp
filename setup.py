@@ -4,8 +4,8 @@ import os
 
 ext_modules = [
     Pybind11Extension(
-        "jwt_cpp",
-        ["jwt_wrapper.cpp"],
+        "py_jwt_cpp.jwt_cpp",
+        ["py_jwt_cpp/jwt_wrapper.cpp"],
         include_dirs=[os.path.join("jwt-cpp", "include"), "/opt/homebrew/include"],
         library_dirs=["/opt/homebrew/lib"],
         libraries=["ssl", "crypto"],
