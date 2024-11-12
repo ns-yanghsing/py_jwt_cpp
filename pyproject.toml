@@ -1,6 +1,7 @@
 [project]
 name = "py_jwt_cpp"
 requires-python = ">=3.8"
+version = "0.1.0"
 
 [tool.poetry]
 name = "py_jwt_cpp"
