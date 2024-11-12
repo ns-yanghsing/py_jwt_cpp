@@ -26,8 +26,13 @@ jobs:
         run: python -m cibuildwheel --output-dir wheelhouse
         # to supply options, put them in 'env', like:
         env:
-          CIBW_BEFORE_BUILD_LINUX: ${{ matrix.linux_type == 'musllinux' && 'apk add --no-cache openssl-dev' || 'yum install -y openssl openssl-devel' }}
-
+          # CIBW_BEFORE_BUILD_LINUX: ${{ matrix.linux_type == 'musllinux' && 'apk add --no-cache openssl-dev' || 'yum install -y openssl openssl-devel' }}
+          CIBW_BEFORE_BUILD_LINUX: |
+            if [ -f "/etc/alpine-release" ]; then
+              apk add --no-cache openssl-dev
+            else
+              yum install -y openssl openssl-devel
+            fi
       - uses: actions/upload-artifact@v4
         with:
           name: cibw-wheels-${{ matrix.os }}-${{ strategy.job-index }}
