@@ -9,10 +9,12 @@ def build(setup_kwarges):
             include_dirs=[
                 os.path.join("jwt-cpp", "include"),
                 "/usr/local/include",
+                "/usr/include",
                 "/opt/homebrew/include",
             ],
             library_dirs=[
                 "/usr/local/lib",
+                "/usr/lib",
                 "/opt/homebrew/lib"
             ],
             libraries=["ssl", "crypto"],
