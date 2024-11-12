@@ -2,8 +2,12 @@
 name = "py_jwt_cpp"
 requires-python = ">=3.8"
 version = "0.1.0"
-authors = ["Yanghsing Lin <yanghsingl@netskope.com>"]
-maintainers = ["Yanghsing Lin <yanghsingl@netskope.com>"]
+authors = [
+  {name = "Yanghsing Lin", email = "yanghsingl@netskope.com"}
+]
+maintainers = [
+  {name = "Yanghsing Lin", email = "yanghsingl@netskope.com"}
+]
 
 [tool.poetry]
 name = "py_jwt_cpp"
