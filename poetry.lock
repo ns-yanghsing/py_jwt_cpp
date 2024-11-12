@@ -16,5 +16,5 @@ global = ["pybind11-global (==2.13.6)"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "3.11.5"
-content-hash = "c43b596069b57df27aa7a78f0fbf440ec479716348bf6bb11b53b120eb4a7ffc"
+python-versions = ">=3.8"
+content-hash = "75bec0fc0c53ae409f02daf354748a4e3f3944246605349b11471e9ea368932c"

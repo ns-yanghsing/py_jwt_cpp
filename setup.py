@@ -19,7 +19,7 @@ setup_kwargs = {
     'url': 'None',
     'packages': packages,
     'package_data': package_data,
-    'python_requires': '==3.11.5',
+    'python_requires': '>=3.8',
 }
 from build import *
 build(setup_kwargs)

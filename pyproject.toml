@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.5"
+python = ">=3.8"
 
 [tool.poetry.group.dev.dependencies]
 pybind11 = "^2.13.6"
