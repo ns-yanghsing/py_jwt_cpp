@@ -11,7 +11,7 @@ where `VERSION` is something like `0.1.0`
 
 ## Usage
 
-```
+```python
 import py_jwt_cpp
 
 jwt = py_jwt_cpp.encode(data, private_key)
@@ -58,6 +58,8 @@ poetry build
 ## TODO
 
 - [ ] `decode` function.
+- [ ] allowing `headers`
+- [ ] allowing algorithms other than `RS256`
 
 
 ## LICENSE
