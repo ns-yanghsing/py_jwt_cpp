@@ -1,3 +1,22 @@
+## Installation
+
+`pip install git+https://github.com/ns-yanghsing/py_jwt_cpp.git@VERSION`
+
+where `VERSION` is something like `0.1.0`
+
+## Usage
+
+```
+import py_jwt_cpp
+
+jwt = py_jwt_cpp.encode(data, private_key)
+```
+
+where:
+
+- `data` is a `dict` with string key and string value
+
+
 ## Development
 
 - To install deployment dependencies, run `poetry install`.
