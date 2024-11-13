@@ -1,3 +1,8 @@
+# py_jwt_cpp
+
+A Python wrapper around [jwt-cpp](https://github.com/Thalhammer/jwt-cpp).
+
+
 ## Installation
 
 `pip install git+https://github.com/ns-yanghsing/py_jwt_cpp.git@VERSION`
@@ -49,3 +54,12 @@ poetry build
 3. Build sdist by `poetry run python setup.py sdist`.
 4. Download the wheels from Github and put them into the `dist` folder.
 5. Commit the change, tag a version such as `0.1.0`, and push the tag back to Github.
+
+## TODO
+
+- [ ] `decode` function.
+
+
+## LICENSE
+
+MIT
