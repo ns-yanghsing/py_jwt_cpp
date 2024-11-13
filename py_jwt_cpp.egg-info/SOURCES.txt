@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+py_jwt_cpp/__init__.py
+py_jwt_cpp/jwt_wrapper.cpp
+py_jwt_cpp.egg-info/PKG-INFO
+py_jwt_cpp.egg-info/SOURCES.txt
+py_jwt_cpp.egg-info/dependency_links.txt
+py_jwt_cpp.egg-info/top_level.txt

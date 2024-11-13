@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: py_jwt_cpp
+Version: 0.1.0
+Home-page: None
+Author: Yanghsing Lin
+Author-email: Yanghsing Lin <yanghsingl@netskope.com>
+Maintainer: Yanghsing Lin
+Maintainer-email: Yanghsing Lin <yanghsingl@netskope.com>
+Requires-Python: >=3.8
