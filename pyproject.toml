@@ -1,6 +1,6 @@
 [project]
 name = "py_jwt_cpp"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 version = "0.1.0"
 authors = [
   {name = "Yanghsing Lin", email = "yanghsingl@netskope.com"}
@@ -17,7 +17,7 @@ authors = ["Yanghsing Lin <yanghsingl@netskope.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10"
+python = ">=3.8"
 
 [tool.poetry.group.dev.dependencies]
 pybind11 = "^2.13.6"
@@ -27,5 +27,5 @@ script = "build.py"
 generate-setup-file = true
 
 [build-system]
-requires = ["poetry-core", "pybind11", "setuptools"]
+requires = ["poetry-core", "pybind11", "setuptools==65.5.0"]
 build-backend = "poetry.core.masonry.api"
